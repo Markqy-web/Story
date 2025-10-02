@@ -1,0 +1,120 @@
+/* Fonts */
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;           
+  line-height: 1.6;          
+  margin: 0;
+  padding: 0;
+
+  /* Fully responsive background */
+  background-image: url("images/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;      
+  background-attachment: fixed; 
+  color: white;
+
+  /* smoother scaling for some browsers */
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+/* Mobile fix for background attachment */
+@media (max-width: 768px) {
+  body {
+    background-attachment: scroll;
+  }
+}
+
+/* Headings use classy font */
+h1, h2, h3 {
+  font-family: 'Merriweather', serif;
+  margin: 0 0 15px 0;
+}
+
+/* Header with sticky nav */
+header {
+  background: rgba(0,0,0,0.7);
+  padding: 20px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header h1 {
+  font-size: 36px;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: orange;
+}
+
+/* Full-width semi-transparent gradient stripes for sections */
+section {
+  width: 100%;
+  padding: 70px 20px;      
+  background: linear-gradient(135deg, rgba(139,0,0,0.85), rgba(75,0,0,0.85)); /* dark red gradient with transparency */
+  margin: 0;                     
+  border-radius: 0;              
+  box-sizing: border-box;
+  color: white;                  
+}
+
+/* Extra spacing for About Us under header */
+#about {
+  padding-top: 120px;  
+}
+
+/* Extra spacing between other sections */
+#synopsis {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+#characters {
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+
+/* Side-by-side character layout inside stripe */
+.character {
+  display: flex;
+  align-items: flex-start;
+  margin: 40px 0; 
+  gap: 20px;
+  flex-wrap: wrap;   
+}
+
+.character img {
+  width: 200px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.character img:hover {
+  transform: scale(1.05);  /* subtle hover zoom */
+}
+
+.char-desc {
+  flex: 1;
+}
+
+.char-desc h3 {
+  margin-top: 0;
+}
+
+/* Paragraphs uniform size */
+p {
+  font-size: 18px;
+  line-height: 1.6;
+}
