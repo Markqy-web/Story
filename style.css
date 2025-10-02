@@ -65,23 +65,23 @@ nav a:hover {
 section {
   width: 90%;
   max-width: 1000px;
-  margin: 50px auto;
-  padding: 80px 30px 50px; /* extra top padding to prevent header overlap */
+  margin: 70px auto;        /* more space between sections */
+  padding: 100px 30px 50px; /* more top padding from header */
   background: white;
   border-radius: 15px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.2);
   color: black;
   box-sizing: border-box;
 
-  scroll-margin-top: 140px; /* ensures nav links scroll correctly below header */
+  scroll-margin-top: 160px; /* header offset for nav links */
 }
 
 /* Character layout */
 .character {
   display: flex;
   align-items: flex-start;
-  margin: 40px 0; 
-  gap: 20px;
+  margin: 50px 0; /* more space between characters */
+  gap: 30px;
   flex-wrap: wrap;   
 }
 
@@ -107,7 +107,7 @@ section {
 
 p {
   font-size: 18px;
-  line-height: 1.6;
+  line-height: 1.8; /* slightly more spacing for readability */
   color: black;
 }
 
@@ -163,4 +163,4 @@ p {
 
 #back-btn:hover {
   background-color: #ddd;
-  }
+}
