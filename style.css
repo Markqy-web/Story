@@ -32,19 +32,19 @@ h1, h2, h3 {
   color: black;
 }
 
-/* Sticky header with hide on scroll */
+/* Sticky header */
 header {
   background: rgba(255,255,255,0.9);
   padding: 20px;
   text-align: center;
-  position: fixed;
+  position: sticky;
   top: 0;
   width: 100%;
   z-index: 100;
   color: black;
-  transition: top 0.3s;
 }
 
+/* Header text */
 header h1 {
   font-size: 36px;
 }
@@ -65,22 +65,30 @@ nav a:hover {
 section {
   width: 90%;
   max-width: 1000px;
-  margin: 70px auto;        /* more space between sections */
-  padding: 100px 30px 50px; /* more top padding from header */
+  margin: 50px auto 100px;
+  padding: 50px 30px;
   background: white;
   border-radius: 15px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.2);
   color: black;
   box-sizing: border-box;
 
-  scroll-margin-top: 160px; /* header offset for nav links */
+  scroll-margin-top: 160px; /* header height + extra spacing */
+}
+
+/* Spacer for anchor scrolling so header doesn’t cover heading */
+section::before {
+  content: "";
+  display: block;
+  height: 140px; /* height of header */
+  margin-top: -140px; /* pull section up */
 }
 
 /* Character layout */
 .character {
   display: flex;
   align-items: flex-start;
-  margin: 50px 0; /* more space between characters */
+  margin: 50px 0;
   gap: 30px;
   flex-wrap: wrap;   
 }
@@ -107,7 +115,7 @@ section {
 
 p {
   font-size: 18px;
-  line-height: 1.8; /* slightly more spacing for readability */
+  line-height: 1.8;
   color: black;
 }
 
@@ -163,4 +171,4 @@ p {
 
 #back-btn:hover {
   background-color: #ddd;
-}
+  }
