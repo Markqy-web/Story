@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <title>Almost Forever: A love that couldn’t last</title>
   <link rel="stylesheet" href="style.css">
-  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -25,7 +24,7 @@
   <section id="characters">
     <h2>Character Infos</h2>
 
-    <div class="character">
+    <div class="character" data-full="images/reymark-full.jpg">
       <img src="images/reymark.jpg" alt="Reymark">
       <div class="char-desc">
         <h3>Reymark</h3>
@@ -33,7 +32,7 @@
       </div>
     </div>
 
-    <div class="character">
+    <div class="character" data-full="images/princes-full.jpg">
       <img src="images/princes.jpg" alt="Princes">
       <div class="char-desc">
         <h3>Princes</h3>
@@ -41,8 +40,8 @@
       </div>
     </div>
 
-    <div class="character">
-      <img src="images/rica.jpg" alt="Rica">
+    <div class="character" data-full="images/rica-full.jpg">
+      <img src="images/rica-full.jpg" alt="Rica">
       <div class="char-desc">
         <h3>Rica</h3>
         <p>A loyal and deeply feeling individual, she has held onto a childhood promise with unwavering hope. Her world is shaken when that promise clashes with her best friend’s happiness.</p>
@@ -50,6 +49,14 @@
     </div>
 
   </section>
+
+  <!-- Full description popup -->
+  <div id="popup" class="popup">
+    <span id="close">&times;</span>
+    <img id="popup-img" src="" alt="">
+    <p id="popup-desc"></p>
+    <button id="back-btn">Back</button>
+  </div>
 
   <script src="script.js"></script>
 </body>
