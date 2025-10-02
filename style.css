@@ -6,7 +6,7 @@ body {
   margin: 0;
   padding: 0;
 
-  /* Fully responsive background */
+  /* Background image stays behind sections */
   background-image: url("images/bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -60,13 +60,13 @@ nav a:hover {
   color: orange;
 }
 
-/* Full-width floating blocks for sections */
+/* Sections as floating white blocks over background */
 section {
   width: 90%;
   max-width: 1000px;
   margin: 50px auto;
   padding: 50px 30px;
-  background: white;
+  background: white; /* only the block is white */
   border-radius: 15px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.2);
   color: black;
@@ -83,7 +83,7 @@ section {
   margin-bottom: 100px;
 }
 
-/* Side-by-side character layout inside stripe */
+/* Side-by-side character layout inside block */
 .character {
   display: flex;
   align-items: flex-start;
