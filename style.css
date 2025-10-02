@@ -63,7 +63,7 @@ nav a:hover {
 section {
   width: 100%;
   padding: 70px 20px;      
-  background: linear-gradient(135deg, rgba(139,0,0,0.85), rgba(75,0,0,0.85)); /* dark red gradient with transparency */
+  background: linear-gradient(135deg, rgba(139,0,0,0.85), rgba(75,0,0,0.85)); 
   margin: 0;                     
   border-radius: 0;              
   box-sizing: border-box;
@@ -73,12 +73,6 @@ section {
 /* Extra spacing for About Us under header */
 #about {
   padding-top: 120px;  
-}
-
-/* Extra spacing between other sections */
-#synopsis {
-  margin-top: 100px;
-  margin-bottom: 100px;
 }
 
 #characters {
@@ -102,7 +96,7 @@ section {
 }
 
 .character img:hover {
-  transform: scale(1.05);  /* subtle hover zoom */
+  transform: scale(1.05);  
 }
 
 .char-desc {
