@@ -66,24 +66,14 @@ section {
   width: 90%;
   max-width: 1000px;
   margin: 50px auto;
-  padding: 50px 30px;
+  padding: 80px 30px 50px; /* extra top padding to prevent header overlap */
   background: white;
   border-radius: 15px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.2);
   color: black;
   box-sizing: border-box;
 
-  scroll-margin-top: 140px;
-}
-
-/* Extra spacing for About Us under header */
-#about {
-  padding-top: 100px;  
-}
-
-#characters {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  scroll-margin-top: 140px; /* ensures nav links scroll correctly below header */
 }
 
 /* Character layout */
@@ -173,4 +163,4 @@ p {
 
 #back-btn:hover {
   background-color: #ddd;
-}
+  }
