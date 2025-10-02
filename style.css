@@ -25,22 +25,24 @@ body {
   }
 }
 
-/* Headings use classy font */
+/* Headings */
 h1, h2, h3 {
   font-family: 'Merriweather', serif;
   margin: 0 0 15px 0;
   color: black;
 }
 
-/* Header with sticky nav */
+/* Sticky header with hide on scroll */
 header {
   background: rgba(255,255,255,0.9);
   padding: 20px;
   text-align: center;
-  position: sticky;
+  position: fixed;
   top: 0;
+  width: 100%;
   z-index: 100;
   color: black;
+  transition: top 0.3s;
 }
 
 header h1 {
@@ -59,7 +61,7 @@ nav a:hover {
   color: orange;
 }
 
-/* Sections as floating white blocks over background */
+/* Sections as white floating blocks */
 section {
   width: 90%;
   max-width: 1000px;
@@ -84,7 +86,7 @@ section {
   margin-bottom: 100px;
 }
 
-/* Side-by-side character layout inside block */
+/* Character layout */
 .character {
   display: flex;
   align-items: flex-start;
@@ -113,7 +115,6 @@ section {
   color: black;
 }
 
-/* Paragraphs uniform size */
 p {
   font-size: 18px;
   line-height: 1.6;
@@ -172,4 +173,4 @@ p {
 
 #back-btn:hover {
   background-color: #ddd;
-  }
+}
