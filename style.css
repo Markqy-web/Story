@@ -12,9 +12,8 @@ body {
   background-position: center;
   background-size: cover;      
   background-attachment: fixed; 
-  color: white;
+  color: black;
 
-  /* smoother scaling for some browsers */
   -webkit-backface-visibility: hidden;
   -webkit-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
@@ -31,16 +30,18 @@ body {
 h1, h2, h3 {
   font-family: 'Merriweather', serif;
   margin: 0 0 15px 0;
+  color: black;
 }
 
 /* Header with sticky nav */
 header {
-  background: rgba(0,0,0,0.7);
+  background: rgba(255,255,255,0.9);
   padding: 20px;
   text-align: center;
   position: sticky;
   top: 0;
   z-index: 100;
+  color: black;
 }
 
 header h1 {
@@ -48,7 +49,7 @@ header h1 {
 }
 
 nav a {
-  color: white;
+  color: black;
   margin: 0 15px;
   text-decoration: none;
   font-size: 18px;
@@ -59,25 +60,27 @@ nav a:hover {
   color: orange;
 }
 
-/* Full-width semi-transparent gradient stripes for sections */
+/* Full-width floating blocks for sections */
 section {
-  width: 100%;
-  padding: 70px 20px;      
-  background: linear-gradient(135deg, rgba(139,0,0,0.85), rgba(75,0,0,0.85)); 
-  margin: 0;                     
-  border-radius: 0;              
+  width: 90%;
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 50px 30px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  color: black;
   box-sizing: border-box;
-  color: white;                  
 }
 
 /* Extra spacing for About Us under header */
 #about {
-  padding-top: 120px;  
+  padding-top: 100px;  
 }
 
 #characters {
-  margin-top: 120px;
-  margin-bottom: 120px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 /* Side-by-side character layout inside stripe */
@@ -105,10 +108,12 @@ section {
 
 .char-desc h3 {
   margin-top: 0;
+  color: black;
 }
 
 /* Paragraphs uniform size */
 p {
   font-size: 18px;
   line-height: 1.6;
+  color: black;
 }
